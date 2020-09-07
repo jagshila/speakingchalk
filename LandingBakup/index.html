@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+  <title>Speaking Chalk</title>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    .row.content {
+      height: 450px;
+    }
+    body {
+      font-family: 'Sofia';
+      background-color: aliceblue;
+
+}
+   
+
+    header,.foo {
+      background-color: black;
+      color: #feffff;
+      padding:5px;
+
+    }
+
+      .row.content {
+        height: auto;
+      }
+      
+</style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+  <header class="container-fluid text-center">
+    <h3> <b>Speaking Chalk</b>
+      <small class="text-right" style="color: #ffffff">~ Towards better learning!</small>
+    </h3>
+  </header>
+<div class="row">
+  <div class="col-sm-6">
+    <img src="bg.webp" width="100%">
+    </div>
+    <div class="col-sm-6 d-flex align-items-center">
+      <div class="container text-center">
+          <blockquote class="blockquote jumbotron">
+              <p>“The beautiful thing about learning <br> is that
+                 nobody can take it away from you.”</p>
+              <footer class="blockquote-footer">B.B. King</footer>
+            </blockquote>
+             <h1><b><i>Speaking Chalk</i></b></h1>
+             <hr> 
+            <h3>COMING SOON</h3>
+      <hr>
+      <p id="demo" style="font-size:30px"></p>
+      <hr> 
+
+
+    </div>
+
+</div>
+
+
+  <footer class="container-fluid text-center foo">
+    <p>An initiative by Connect Learners Academy.</p>
+  </footer>
+</div>
+</div>
+
+
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Oct 15, 2020 15:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var countdownfunction = setInterval(function() {
+    
+      // Get todays date and time
+      var now = new Date().getTime();
+      
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+      
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+      
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+</body>
+
+</html>
