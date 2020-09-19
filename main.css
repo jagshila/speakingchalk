@@ -4,6 +4,14 @@ font-style: normal;
 font-weight: normal;
 }
 
+a:hover{
+    color: #FFFFFF;
+}
+
+a:link{
+    color: #FFFFFF;
+}
+
 ::placeholder {
     color: rgba(255, 255, 255, 0.7);    opacity: 1; /* Firefox */
   }
@@ -52,10 +60,9 @@ width:auto;
 width:auto;
 padding-right: 20px;
 font-style: italic;
-font-weight: 500;
+font-weight: 500px;
 font-size: 16px;
 line-height: 19px;
-/* identical to box height */
 
 display: flex;
 align-items: center;
@@ -111,6 +118,10 @@ color: #FFFFFF;
     font-weight: 600;
 font-size: 32px;
 line-height: 42px;
+}
+
+.spacer{
+    margin-bottom:120px;
 }
 
 .search-box{
@@ -220,7 +231,7 @@ height: 294px;
     width: 200px;
     height: 60px;   
     border: 0px;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 25px;
 color: rgba(0, 0, 0, 0.6);
 
@@ -253,6 +264,10 @@ background: url("images/rect-21.png") no-repeat center;}
 .category-table tr:nth-child(3) td:nth-child(3){
     background: url("images/rect-33.png") no-repeat center;}
 
+.category-table tr:nth-child(4) td:nth-child(1){
+        font-size: 28px;
+        height: 30px;
+        color:rgba(4, 146, 146, 0.8);}
     
 .content3{
     max-width: 336px;
@@ -366,19 +381,28 @@ line-height: 14px;
 color: #FFFFFF;
 }
 
+footer a{
+    color:#FFFFFF;
+}
+
+
 
 @media (max-width: 767px){
 
 .tagline{
-    font-size: 4vw;
+    font-size: 15px;
 }
 
 .tagline h2{
-    font-size: 6vw;
+    font-size: 28px;
+}
+
+.spacer{
+    margin-bottom: 0px;
 }
 
 .category-table tr td{
-    font-size:3.5vw;
+    font-size:auto;
     line-height: 82%;
 }
 
